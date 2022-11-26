@@ -14,7 +14,7 @@ struct Node* Insert(struct Node* head, int data){
 	if(head == NULL) head = temp;
 	else {
 		Node* temp1 = head;
-		while(temp1 -> next != NULL) temp = temp1 -> next;
+		while(temp1 -> next != NULL) temp1 = temp1 -> next;
 		temp1->next = temp;
 		}
 		return head;
